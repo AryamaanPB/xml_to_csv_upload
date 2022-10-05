@@ -1,0 +1,9 @@
+version: '1.0.0'
+services:
+
+  service-name:
+    image: internship-assignment
+    environment:
+    - GREETING=hello
+    env_file: 
+    - .env

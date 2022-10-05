@@ -1,0 +1,10 @@
+DEBUG:root:Begin logging
+DEBUG:root:Begin logging
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): registers.esma.europa.eu:443
+DEBUG:urllib3.connectionpool:https://registers.esma.europa.eu:443 "GET /solr/esma_registers_firds_files/select?q=*&fq=publication_date:%5B2021-01-17T00:00:00Z+TO+2021-01-19T23:59:59Z%5D&wt=xml&indent=true&start=0&rows=100 HTTP/1.1" 200 None
+INFO:root:Downloaded the XML with the ESMA Data download link
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): firds.esma.europa.eu:80
+DEBUG:urllib3.connectionpool:http://firds.esma.europa.eu:80 "GET /firds/DLTINS_20210117_01of01.zip HTTP/1.1" 200 4434514
+INFO:root:Downloaded the ZIP from the download link
+INFO:root:Extracted contents from the ZIP into the /data/xml folder
+INFO:root:Converting the XML to a CSV file
